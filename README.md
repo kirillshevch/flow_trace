@@ -15,7 +15,7 @@ gem 'flow_trace'
 
 ## Usage
 
-1. Configuration
+### 1. Configuration
 
 Use `https` proxy (for example `ngrok`) to local `4567` port.
 
@@ -26,13 +26,15 @@ FlowTrace::Settings.configure do |config|
 end
 ```
 
-2. Declare remote flow
+### 2. Declare remote flow
+
+Step interface is here:
 
 ```ruby
 FlowTrace::Step.call(:flow_name, :step_name, {})
 ```
 
-3. Start receive messages (locally)
+### 3. Start receive messages (locally)
 
 ```
 bundle exec flow_trace
