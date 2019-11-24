@@ -5,6 +5,11 @@ Brand new remote app inspecting tool. Declare feature steps and receive params, 
 * Look into what happens on you *staging* environments
 * Doesn't have payloads for tests, debugging, bug fix? Get data during reproducing feature flow.
 
+<p align="center">
+  <img src="https://github.com/kirillshevch/flow_trace/blob/master/demo.gif" width="80%" alt="FlowTrace demo"/>
+</p>
+
+
 ## Installation
 
 Add this line to your application's Gemfile and then execute `bundle install`:
