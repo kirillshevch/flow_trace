@@ -1,3 +1,7 @@
+# v0.0.4 2019-11-24
+
+Added unit test ([kirillshevch](https://github.com/kirillshevch/flow_trace/pull/3))
+
 # v0.0.3 2019-11-23
 
 Added `Thin`, new print output ([kirillshevch](https://github.com/kirillshevch/flow_trace/pull/2))
