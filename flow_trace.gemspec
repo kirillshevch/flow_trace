@@ -27,6 +27,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_dependency 'http'
+  spec.add_dependency 'thin'
   spec.add_dependency 'sinatra'
   spec.add_dependency 'dry-configurable'
 

@@ -4,6 +4,10 @@
 # first when searching the load path
 $LOAD_PATH.unshift File.expand_path('../lib', __FILE__)
 
+require 'thin'
 require 'flow_trace/server'
+Thin::Logging.silent = true
+
+p "FlowTrace waiting for requests..."
 
 FlowTrace::Server.run!
