@@ -17,7 +17,7 @@ gem 'flow_trace'
 
 ### 1. Configuration
 
-Use `https` proxy (for example `ngrok`) to local `4567` port.
+Use `https` proxy (for example [ngrok](http://ngrok.io/)) to local `4567` port.
 
 `config/initializers/flow_trace.rb`
 ```ruby
@@ -31,7 +31,7 @@ end
 Step interface is here:
 
 ```ruby
-FlowTrace::Step.call(:flow_name, :step_name, {})
+FlowTrace::Step.call(:flow_name, :step_name, { additional: 'data' })
 ```
 
 ### 3. Start receive messages (locally)

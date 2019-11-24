@@ -1,5 +1,15 @@
 require 'bundler/setup'
 require 'flow_trace'
+require 'vcr'
+require 'webmock/rspec'
+WebMock.disable_net_connect!(allow_localhost: true)
+
+VCR.configure do |c|
+  c.cassette_library_dir = 'spec/cassettes'
+  c.default_cassette_options = { record: :new_episodes }
+  c.hook_into :webmock
+  c.configure_rspec_metadata!
+end
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
